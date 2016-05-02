@@ -6,6 +6,7 @@
 package Servicios;
 
 import data.*;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -29,7 +30,7 @@ public class Servicios {
         return u1;
     }
     
-    public void comentar(Usuario u1, Date Fecha){
+    public void comentar(RedSocial r,Usuario u1, Date Fecha){
         System.out.println("Ingrese comentario:");
         String comentario= scanner.next();
         u1.hacerComentario(comentario, Fecha);

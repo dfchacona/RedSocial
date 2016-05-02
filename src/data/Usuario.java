@@ -6,7 +6,7 @@
 package data;
 
 import Exception.*;
-import java.util.Date;
+import java.util.*;
 
 /**
  *
@@ -30,5 +30,21 @@ public class Usuario {
     public void subirFoto(String ruta){
         Fotografia f1= new Fotografia(ruta);
     }
-    
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+     
 }

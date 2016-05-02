@@ -5,6 +5,7 @@
  */
 package data;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -13,11 +14,17 @@ import java.util.Date;
  */
 public class Comentario {
     private String texto; 
-    private Date fechaCreacion; 
+    private Calendar fechaCreacion; 
+    private Usuario creador; 
 
-    public Comentario(String texto, Date fechaCreacion) {
+    public Comentario(String texto, Calendar fechaCreacion) {
         this.texto = texto;
         this.fechaCreacion = fechaCreacion;
+        
+    }
+
+    public void setCreador(Usuario creador) {
+        this.creador = creador;
     }
     
     

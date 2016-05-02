@@ -30,4 +30,20 @@ public class RedSocial {
         
         comentarios.add(c1);
     }
+    
+   
+    
+    
+    public ArrayList<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    public ArrayList<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public ArrayList<Fotografia> getFotografias() {
+        return fotografias;
+    }
+    
 }
